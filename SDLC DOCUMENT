@@ -1,1 +1,24 @@
+                                                                  Introduction to SDLC (Software Development Life Cycle)
 
+      The Software Development Life Cycle (SDLC) is a structured process used by software development teams to design, develop, test, and deliver high-quality software. 
+      It provides a systematic approach to building software applications, ensuring efficiency, accuracy, and alignment with user requirements.
+
+Objectives of SDLC
+     1. Deliver High-Quality Software : Ensures the end product meets user expectations and requirements.
+     2. Cost and Time Efficiency : Reduces waste and optimizes development timelines and resources.
+     3. Error Minimization: Incorporates testing and feedback loops to catch issues early.
+     4. Consistency : Follows a defined structure, ensuring repeatable and reliable outcomes.
+
+Phases of SDLC
+
+    1.Requirement Gathering and Analysis
+    2.System Design
+    3.Implementations 
+    4.Testing  
+    5.Deployment 
+    6.Maintenance
+    7.Benefits of SDLC
+- Enhances project management and team collaboration.
+- Improves risk management through defined processes.
+- Ensures software reliability and scalability.
+- Increases customer satisfaction by delivering tailored solutions.
