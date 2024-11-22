@@ -1,0 +1,61 @@
+@model IEnumerable<Leave.Leavea>
+@using Microsoft.AspNetCore.Http;
+@using Microsoft.AspNetCore.Mvc;
+
+@{
+    ViewData["Title"] = "Leave";
+}
+
+<h4>Welcome @TempData["UserName"]</h4> 
+
+<h1 align="center
+\">Leave Dashboard</h1>
+<br></br>
+<p>    
+     <input type="button"
+         value="Create" class="btn btn-success"
+         onclick="location.href='@Url.Action("Create", "Leave")'" />
+</p>
+<table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeaveType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeaveType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td> 
+
+                <input type="button" value="Edit" class="btn btn-info" onclick="location.href='@Url.Action("Edit", "Leave", new { id = item.LeaveId})'"  />
+                <input type="button" value="Details" class="btn btn-secondary"onclick="location.href='@Url.Action("Details", "Leave",new { id = item.LeaveId})'"  />
+                <input type="button" value="Delete" class="btn btn-danger"  onclick="location.href='@Url.Action("Delete", "Leave",new { id = item.LeaveId})'" />
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
